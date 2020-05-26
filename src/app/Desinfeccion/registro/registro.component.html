@@ -1,0 +1,61 @@
+
+
+<p>registro works!</p>
+<form id="frmEnviaDatosFumigacion">
+    <div id="sectionBusqueda">
+        <div class="row" style="background-color:#eef4f9">
+            <div class="col-md-12 text-center" style="padding-top: 12px;">
+                <span class="Estilodecarcternormal">¡Bienvenid@@!</span>
+                <p class="Estilodecarcternormal4">Supervisión de desinfeccion de vehículos</p>
+                <p class="Estilodecarcternormal4" style="padding-bottom: 0px; margin-bottom: 0px;">Session["USUARIO_SUPERVISOR"] </p>
+                <p><a href="">(Cerrar sesión)</a></p>
+            </div>
+
+
+            <div class="col-md-12 text-center" style="padding-top: 21px;">
+                <div class="inner-addon left-addon">
+                    <span class="icono fa fa-bus" style="color: #80808059; font-size: 16px;"></span>
+                    <input type="text" name="name_placa" value="" placeholder="Ingrese el Número de Placa" id="txtPlacaRegistro" maxlength="6" class="form-control" style="display:initial !important;width: 257px;" />
+                    <p id="errorPlacaBusqueda" style="padding-bottom: 0; margin-bottom: 0; color: red;" hidden>Verificar placa ingresada.</p>
+                </div>
+            </div>
+
+            <div class="col-md-12 text-center" style="padding-top: 21px;">
+                <select name="name_id_centroDesinfecta" id="selectCentroDesinfeccion" style="width: 257px;display:initial" class="form-control">
+                </select>
+                <button id="btnSetEmpresa" type="button" style="position: absolute;" onclick="setearEmpresa();">
+                    <span class="fa fa-lock"></span>
+                </button>
+            </div>
+
+
+            <div class="col-md-12 text-center" style="padding-top: 21px;">
+                <div class="inner-addon left-addon">
+                    <textarea id="txtObservacion" name="name_observacion" rows="2" placeholder="Ingresar Observación" class="form-control" style="display:initial !important;width: 257px;">
+
+                    </textarea>
+                </div>
+            </div>
+
+            <div class="col-md-12 text-center" style="padding-top: 21px;">
+                <div id="sectionFoto" class="fileinput fileinput-new" data-provides="fileinput">
+                    <div class="fileinput-preview img-thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
+                    <div>
+                        <span class="btn btn-outline-secondary btn-file">
+                            <span class="fileinput-new">Subir Imagen</span>
+                            <span class="fileinput-exists">Cambiar</span>
+                            <input type="file" id="imgTemporalOperador" name="..." accept="image/gif, image/jpeg, image/png">
+                        </span>
+                        <a href="#" class="btn btn-outline-secondary fileinput-exists" data-dismiss="fileinput">Quitar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 text-center" style="padding-top: 13px;padding-bottom: 24px;">
+                <button id="btnConsultar" type="submit" style="width: 200px;border-radius: 50px;font-weight: bold;color: white;background-color: #154390;border: 1px solid #154390;" class="btn btn-info">Registrar</button>
+                <p id="estadoRegistroDesinfec" style="padding-bottom: 0; margin-bottom: 0; color: red;display:none"></p>
+                <p id="errorCentroDesinfeccion" style="padding-bottom: 0; margin-bottom: 0; color: red;" hidden>Es necesario seleccionar el centro.</p>
+            </div>
+        </div>
+    </div>
+    </form>

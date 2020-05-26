@@ -1,0 +1,42 @@
+
+    <form [formGroup] = 'formGroup' (ngSubmit)="onSubmit()" >
+        <div id="sectionBusqueda">
+            <div class="row" style="background-color:#eef4f9">
+                <div class="col-md-12 text-center" style="padding-top: 12px;">
+                    <span class="Estilodecarcternormal">¡Bienvenid@!</span>
+                    <p class="Estilodecarcternormal4">Supervisíón de desinfección de vehículos</p>
+                </div>
+        
+                <div class="col-md-12 text-center" style="padding-top: 21px;">
+                    <div class="inner-addon left-addon">
+                        <span class="icono fa fa-bus" style="color: #80808059; font-size: 16px;"></span>
+                        <input type="text" formControlName="usuario" value="" placeholder="Ingrese su usuario" id="txtNombreUsuario" maxlength="30" class="form-control" style="display:initial !important;width: 257px;" />
+                        
+                        <div *ngIf="submitted && datosForm.usuario.errors" >
+                            <p *ngIf="datosForm.usuario.errors.required" style="padding-bottom: 0; margin-bottom: 0; color: red;" >Verificar usuario ingresado.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-12 text-center" style="padding-top: 21px;">
+                    <div class="inner-addon left-addon">
+                        <span class="icono fa fa-bus" style="color: #80808059; font-size: 16px;"></span>
+                        <input  formControlName="clave"  type="password" value="" placeholder="Ingrese su clave" id="txtClaveUsuario" maxlength="40" class="form-control" style="display:initial !important;width: 257px;" />
+                        <div *ngIf="submitted && datosForm.clave.errors" >
+                            <p *ngIf="datosForm.clave.errors.required"   style="padding-bottom: 0; margin-bottom: 0; color: red;" >Es necesario ingresar la clave.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-12 text-center" style="padding-top: 13px;padding-bottom: 24px;">
+                    <button  id="btnConsultar" style="width: 200px;border-radius: 50px;font-weight: bold;color: white;background-color: #154390;border: 1px solid #154390;" class="btn btn-info">
+                        Ingresar
+                    </button>
+                    <p  style="padding-bottom: 0; margin-bottom: 0; color: red;" >{{ mensajeAlerta }}</p>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+

@@ -1,0 +1,98 @@
+
+    @charset "utf-8";
+
+    .Estilodecarcternormal1 {
+        font-size: 15px;
+        color: #CC0000;
+        color: rgb(204, 0, 0);
+    }
+
+    .Estilodecarcternormal4 {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 22px;
+        color: #213B84;
+        color: rgb(33, 59, 132);
+    }
+
+    .Estilodecarcternormal2 {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23.68px;
+        color: #CC0000;
+        color: rgb(204, 0, 0);
+    }
+
+    .Estilodecarcternormal {
+        font-size: 37px;
+        line-height: 40px;
+        color: #000000;
+        color: rgb(0, 0, 0);
+    }
+
+    .Estilodecarcternormal5 {
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 22px;
+        color: #213B84;
+        color: rgb(33, 59, 132);
+    }
+
+    .Estilodecarcternormal3 {
+        font-family: Calibri;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 19.66px;
+        color: #FFFFFF;
+        color: rgb(255, 255, 255);
+    }
+ 
+    .realperson-regen  {
+        font-size: 15px;
+        color: black;
+    }
+
+    .textoPequenio {
+        font-size: 13px;
+    }
+
+    .row {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    .inner-addon {
+        position: relative;
+    }
+
+
+        .inner-addon .icono {
+            position: absolute;
+            padding: 10px;
+            pointer-events: none;
+        }
+
+
+    .left-addon .icono {
+        /*left: 0px;*/
+    }
+
+    .right-addon .icono {
+        right: 0px;
+    }
+
+
+    .left-addon input {
+        padding-left: 37px;
+    }
+
+    .right-addon input {
+        padding-right: 37px;
+    }
+
+    .locked{
+        background-color: #3bc10f;
+        color: white;
+    }
+
